@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E46A54FCD007B71714D1125 /* Pods_rss_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655A098692E8437FEE706187 /* Pods_rss_reader.framework */; };
+		A33A47052066E8F8005D3839 /* RssItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A47042066E8F8005D3839 /* RssItemModel.swift */; };
 		A386697D206427F300C30E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386697C206427F300C30E3D /* AppDelegate.swift */; };
-		A386697F206427F300C30E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386697E206427F300C30E3D /* ViewController.swift */; };
 		A3866982206427F300C30E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3866980206427F300C30E3D /* Main.storyboard */; };
 		A3866984206427F300C30E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3866983206427F300C30E3D /* Assets.xcassets */; };
 		A3866987206427F300C30E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3866985206427F300C30E3D /* LaunchScreen.storyboard */; };
+		A386699020642B0C00C30E3D /* RssListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386698F20642B0C00C30E3D /* RssListController.swift */; };
+		A38669962064325400C30E3D /* RssItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38669952064325400C30E3D /* RssItemCell.swift */; };
+		A38669982064417100C30E3D /* EditControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38669972064417100C30E3D /* EditControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C395B182EAFB381705BD32E /* Pods-rss-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rss-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rss-reader/Pods-rss-reader.debug.xcconfig"; sourceTree = "<group>"; };
+		655A098692E8437FEE706187 /* Pods_rss_reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rss_reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33A47042066E8F8005D3839 /* RssItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RssItemModel.swift; path = Models/RssItemModel.swift; sourceTree = "<group>"; };
 		A3866979206427F300C30E3D /* rss-reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rss-reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A386697C206427F300C30E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A386697E206427F300C30E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3866981206427F300C30E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3866983206427F300C30E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3866986206427F300C30E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3866988206427F300C30E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A386698F20642B0C00C30E3D /* RssListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RssListController.swift; path = Controllers/RssListController.swift; sourceTree = "<group>"; };
+		A38669952064325400C30E3D /* RssItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RssItemCell.swift; path = Cells/RssItemCell.swift; sourceTree = "<group>"; };
+		A38669972064417100C30E3D /* EditControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditControllerViewController.swift; path = Controllers/EditControllerViewController.swift; sourceTree = "<group>"; };
+		F7CCE2DD42980EC5C1AA24AB /* Pods-rss-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rss-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-rss-reader/Pods-rss-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E46A54FCD007B71714D1125 /* Pods_rss_reader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		589C5E43E5A6DAB513C7DDF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655A098692E8437FEE706187 /* Pods_rss_reader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67380845E1DCC4478D7ED128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C395B182EAFB381705BD32E /* Pods-rss-reader.debug.xcconfig */,
+				F7CCE2DD42980EC5C1AA24AB /* Pods-rss-reader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A37FF0232066710B00FBEFE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A33A47042066E8F8005D3839 /* RssItemModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		A3866970206427F300C30E3D = {
 			isa = PBXGroup;
 			children = (
 				A386697B206427F300C30E3D /* rss-reader */,
 				A386697A206427F300C30E3D /* Products */,
+				67380845E1DCC4478D7ED128 /* Pods */,
+				589C5E43E5A6DAB513C7DDF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,41 @@
 		A386697B206427F300C30E3D /* rss-reader */ = {
 			isa = PBXGroup;
 			children = (
+				A37FF0232066710B00FBEFE7 /* Models */,
+				A3866991206431E700C30E3D /* Controls */,
+				A386698E20642AE800C30E3D /* Controllers */,
 				A386697C206427F300C30E3D /* AppDelegate.swift */,
-				A386697E206427F300C30E3D /* ViewController.swift */,
 				A3866980206427F300C30E3D /* Main.storyboard */,
 				A3866983206427F300C30E3D /* Assets.xcassets */,
 				A3866985206427F300C30E3D /* LaunchScreen.storyboard */,
 				A3866988206427F300C30E3D /* Info.plist */,
 			);
 			path = "rss-reader";
+			sourceTree = "<group>";
+		};
+		A386698E20642AE800C30E3D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A386698F20642B0C00C30E3D /* RssListController.swift */,
+				A38669972064417100C30E3D /* EditControllerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A3866991206431E700C30E3D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A3866992206431F200C30E3D /* Cells */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		A3866992206431F200C30E3D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A38669952064325400C30E3D /* RssItemCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A386698B206427F300C30E3D /* Build configuration list for PBXNativeTarget "rss-reader" */;
 			buildPhases = (
+				6E517FFCD29D63989CC0D254 /* [CP] Check Pods Manifest.lock */,
 				A3866975206427F300C30E3D /* Sources */,
 				A3866976206427F300C30E3D /* Frameworks */,
 				A3866977206427F300C30E3D /* Resources */,
+				0B96FB4B324E74314E4295FE /* [CP] Embed Pods Frameworks */,
+				6FFB0C398B9336094BD9A9E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +199,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B96FB4B324E74314E4295FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rss-reader/Pods-rss-reader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rss-reader/Pods-rss-reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E517FFCD29D63989CC0D254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rss-reader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FFB0C398B9336094BD9A9E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rss-reader/Pods-rss-reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3866975206427F300C30E3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A386697F206427F300C30E3D /* ViewController.swift in Sources */,
+				A38669982064417100C30E3D /* EditControllerViewController.swift in Sources */,
+				A386699020642B0C00C30E3D /* RssListController.swift in Sources */,
 				A386697D206427F300C30E3D /* AppDelegate.swift in Sources */,
+				A38669962064325400C30E3D /* RssItemCell.swift in Sources */,
+				A33A47052066E8F8005D3839 /* RssItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +397,7 @@
 		};
 		A386698C206427F300C30E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C395B182EAFB381705BD32E /* Pods-rss-reader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +412,7 @@
 		};
 		A386698D206427F300C30E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CCE2DD42980EC5C1AA24AB /* Pods-rss-reader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
